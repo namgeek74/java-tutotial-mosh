@@ -1,54 +1,35 @@
 package com.helloworld;
 
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Date;
 
 public class Main {
 
     public static void main(String[] args) {
-        byte myAge = 27;
-        int herAge =  myAge - 2;
-        int viewsCount = 1_123_456_789;
-        long viewsCount2 = 3_123_456_789L;
-        float price = 10.99F;
-        double extraPrice = 10.5203;
-        char letter = 'n';
-        boolean isSigned = true;
-        System.out.println(herAge);
-        System.out.println(viewsCount);
-        System.out.println(viewsCount2);
-        System.out.println(price);
-        System.out.println(extraPrice);
-        System.out.println(letter);
-        System.out.println(isSigned);
-        Date now = new Date();
-        System.out.println(now);
+        int[] numbers = new int[5];
+        numbers[0] = 0;
+        numbers[1] = 1;
+        System.out.println(Arrays.toString(numbers));
+        String[] strs = new String[2];
+        boolean[] arrBoolean = new boolean[3];
 
-        // primitive types is independent
-        int x = 2;
-        int y = x;
-        x = 1;
-        System.out.println(y);
+        System.out.println(Arrays.toString(strs));
+        System.out.println(Arrays.toString(arrBoolean));
+        int[] intArrNumber = {2, 3, 5, 7, 2};
+        Arrays.sort(intArrNumber);
+        System.out.println(intArrNumber.length);
+        System.out.println(Arrays.toString(intArrNumber));
 
-        // reference types is store address of variable
-        Point point = new Point(1, 1);
-        Point point2 = point;
-        point.x = 2;
-        System.out.println(point2);
+        // multi dimension array
+        int[][] nums = {{1, 2, 3}, {4, 5}};
+        // nums[1][3] = 7;
+        System.out.println(nums.length);
+        System.out.println(nums[0].length);
+        System.out.println(nums[1].length);
 
-        // String built-in in Java
-        String message = "Hello world";
-        System.out.println(message);
-        boolean isEndWithD = message.endsWith(("k"));
-        System.out.println(isEndWithD);
-        System.out.println(message.indexOf("l"));
-        System.out.println(message.replace("l", "*"));
-        System.out.println(message);
-
-        // Special characters
-        String name = "Hello \"Nam\" ";
-        System.out.println(name);
-        System.out.println("c::\\Windows\\");
-        System.out.println("Nam \nNguyen");
+        // constant
+        final float PI = 3.14F;
+        // PI = 1;  Cannot assign a value to final variable 'PI'
     }
 }
