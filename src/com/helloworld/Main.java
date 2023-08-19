@@ -35,5 +35,20 @@ public class Main {
         Point point2 = point;
         point.x = 2;
         System.out.println(point2);
+
+        // String built-in in Java
+        String message = "Hello world";
+        System.out.println(message);
+        boolean isEndWithD = message.endsWith(("k"));
+        System.out.println(isEndWithD);
+        System.out.println(message.indexOf("l"));
+        System.out.println(message.replace("l", "*"));
+        System.out.println(message);
+
+        // Special characters
+        String name = "Hello \"Nam\" ";
+        System.out.println(name);
+        System.out.println("c::\\Windows\\");
+        System.out.println("Nam \nNguyen");
     }
 }
