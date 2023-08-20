@@ -1,15 +1,17 @@
 package com.helloworld;
 
+import com.helloworld.ooppillars.*;
+import com.helloworld.otherpackage.First;
+
 public class Main {
-    int x = 5;
-
     public static void main(String[] args) {
-        InheritAbstractExample myObj = new InheritAbstractExample();
+        Animal myAnimal = new Animal();  // Create a Animal object
+        Animal myPig = new Pig();  // Create a Pig object
+        Animal myDog = new Dog();  // Create a Dog object
+        myAnimal.animalSound();
+        myPig.animalSound();
+        myDog.animalSound();
 
-        System.out.println("Name: " + myObj.fname);
-        System.out.println("Age: " + myObj.age);
-        System.out.println("Graduation Year: " + myObj.graduationYear);
-        myObj.study(); // call abstract method
     }
 
 }
