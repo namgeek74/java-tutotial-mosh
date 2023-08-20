@@ -1,13 +1,15 @@
 package com.helloworld;
 
 public class Main {
-    public int x = 5;
+    int x = 5;
 
     public static void main(String[] args) {
-        Second secondInstance = new Second();
-        System.out.println(secondInstance.secondMessage);
-        System.out.println(secondInstance.secondAttribute);
-        System.out.println(Recursion.sum(5, 10));
+        InheritAbstractExample myObj = new InheritAbstractExample();
+
+        System.out.println("Name: " + myObj.fname);
+        System.out.println("Age: " + myObj.age);
+        System.out.println("Graduation Year: " + myObj.graduationYear);
+        myObj.study(); // call abstract method
     }
 
 }
