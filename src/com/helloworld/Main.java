@@ -5,10 +5,11 @@ import com.helloworld.otherpackage.First;
 
 public class Main {
     public static void main(String[] args) {
-        InterfaceExample interfaceExample = new InterfaceExample();
-        interfaceExample.animalSound();
-        interfaceExample.sleep();
-        interfaceExample.myOtherMethod();
+        DateTimeExample dateTimeExample = new DateTimeExample();
+        dateTimeExample.getLocalDate();
+        dateTimeExample.getLocalTime();
+        dateTimeExample.logLocalDateTime();
+        dateTimeExample.formatDateTime();
     }
 
 }
