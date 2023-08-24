@@ -1,4 +1,4 @@
-package com.helloworld;
+package com.helloworld.demo;
 
 public class Overloading {
     static int plusMethod(int x, int y) {

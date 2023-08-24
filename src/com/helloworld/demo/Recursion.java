@@ -1,4 +1,4 @@
-package com.helloworld;
+package com.helloworld.demo;
 
 public class Recursion {
     public static int sum(int start, int end) {

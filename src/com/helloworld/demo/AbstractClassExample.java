@@ -1,4 +1,4 @@
-package com.helloworld;
+package com.helloworld.demo;
 
 public abstract class AbstractClassExample {
     public String fname = "John";

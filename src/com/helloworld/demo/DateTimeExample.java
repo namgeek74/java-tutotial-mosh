@@ -1,4 +1,4 @@
-package com.helloworld;
+package com.helloworld.demo;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

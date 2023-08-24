@@ -1,4 +1,4 @@
-package com.helloworld;
+package com.helloworld.demo;
 
 public class ModifiersExample {
     // Access Modifiers - controls the access level

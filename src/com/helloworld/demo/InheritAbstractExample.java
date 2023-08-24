@@ -1,4 +1,6 @@
-package com.helloworld;
+package com.helloworld.demo;
+
+import com.helloworld.demo.AbstractClassExample;
 
 public class InheritAbstractExample extends AbstractClassExample {
     public int graduationYear = 2018;
