@@ -23,12 +23,16 @@ public class MapDemo {
         linkedHashMap.put("key1", "value1");
         linkedHashMap.put("key2", "value2");
         linkedHashMap.put("key3", "value3");
+        linkedHashMap.put(null, null);
+
         System.out.println(linkedHashMap);
 
         SortedMap<String, String> treeMap = new TreeMap<>();
         treeMap.put("key3", "value3");
         treeMap.put("key2", "value2");
         treeMap.put("key1", "value1");
+        treeMap.put("key0", null);
+
         System.out.println(treeMap);
     }
 }
