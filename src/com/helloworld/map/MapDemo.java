@@ -12,6 +12,11 @@ public class MapDemo {
         hashMap.put("key1", "value1");
         hashMap.put("key2", "value2");
         hashMap.put("key3", "value3");
+        hashMap.put(null, "value3");
+        hashMap.put("key4", null);
+        hashMap.put(null, null);
+        hashMap.put("key4", "abc");
+
         System.out.println(hashMap);
 
         Map<String, String> linkedHashMap = new LinkedHashMap<>();
