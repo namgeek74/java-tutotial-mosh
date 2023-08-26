@@ -4,7 +4,7 @@ package com.helloworld.string;
 
 public class BuilderAndBuffer {
     public static void show() {
-        // String is immutable, it create new object
+        // String is immutable, it creates new object
         String immutable = "abc";
         immutable = immutable + "def";
 
